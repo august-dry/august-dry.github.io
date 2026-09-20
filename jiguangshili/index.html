@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>激光视力矫正-专业近视手术解决方案与术前评估指南</title>
+    <meta name="description" content="本站提供激光视力矫正（全飞秒、半飞秒、ICL晶体植入）的深度科普、手术原理、术前术后护理指南及权威医生推荐，帮助近视人群科学选择视力矫正方案。">
+    <meta name="keywords" content="激光视力矫正,近视手术,全飞秒手术,半飞秒手术,ICL晶体植入,近视矫正">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8e8;
+            --accent-color: #ff6b6b;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 16px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #004494;
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f2ff 0%, #ffffff 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Content Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+        }
+
+        /* Cards Grid */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link::after {
+            content: "→";
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .card-link:hover::after {
+            margin-left: 10px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comparison-table th {
+            background-color: #f1f8ff;
+            color: var(--primary-color);
+            font-weight: 600;
+            width: 25%;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #fafafa;
+        }
+
+        .check-icon {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .cross-icon {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--bg-light);
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .faq-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Pre-op Checklist */
+        .checklist-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .checklist-content {
+            flex: 2;
+        }
+
+        .checklist-steps {
+            flex: 1;
+        }
+
+        .step-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .step-num {
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .sidebar-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            height: fit-content;
+        }
+
+        .sidebar-box h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .sidebar-box ul li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .sidebar-box ul li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #b0b0b0;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+
+            .comparison-table th, .comparison-table td {
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-color)"><path d="M2 12h20"></path><path d="M12 2v20"></path><path d="M4.93 4.93l14.14 14.14"></path><path d="M19.07 4.93L4.93 19.07"></path></svg>
+                <span>视界清晰</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#intro" class="active">手术原理</a></li>
+                    <li><a href="#types">矫正方式</a></li>
+                    <li><a href="#comparison">方案对比</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#guide">术前指南</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">在线咨询</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>激光视力矫正<br><span>告别眼镜，重获清晰视界</span></h1>
+                <p>深入了解全飞秒、半飞秒及ICL晶体植入术。我们提供专业的术前评估、手术科普及术后护理指导，助您安全开启清晰生活。</p>
+                <a href="#types" class="cta-btn" style="font-size: 1.1rem; padding: 12px 30px;">查看手术类型</a>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>10万+</h3>
+                        <p>成功案例</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>满意度</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20年+</h3>
+                        <p>临床经验</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction / Why -->
+        <section id="intro">
+            <div class="container">
+                <div class="section-title">
+                    <h2>为什么要选择激光视力矫正？</h2>
+                    <p>不仅仅是摘掉眼镜，更是生活品质的提升</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-tag">自由活动</div>
+                            <h3>运动无束缚</h3>
+                            <p>无论是游泳、跑步还是剧烈运动，再也不用担心眼镜滑落或镜片破碎，享受全身心投入的快乐。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-tag">职业发展</div>
+                            <h3>形象加分</h3>
+                            <p>对于需要频繁面对客户或镜头的职业，清晰且自然的裸眼形象往往能带来更多的职业自信。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-tag">视觉质量</div>
+                            <h3>高清视觉</h3>
+                            <p>现代激光手术技术不仅提高视力，还能改善夜视能力和视觉对比度，提供更舒适的视觉体验。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surgery Types -->
+        <section id="types" style="background-color: #f8f9fa;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>主流激光视力矫正技术</h2>
+                    <p>根据眼部条件，选择最适合您的手术方案</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('https://picsum.photos/seed/laser1/400/250');"></div>
+                        <div class="card-body">
+                            <div class="card-tag">SMILE全飞秒</div>
+                            <h3>微创无瓣手术</h3>
+                            <p>通过2mm微小切口取出透镜，不制作角膜瓣，适合运动爱好者及角膜较薄的人群。恢复快，干眼概率低。</p>
+                            <a href="#" class="card-link">了解详情</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('https://picsum.photos/seed/laser2/400/250');"></div>
+                        <div class="card-body">
+                            <div class="card-tag">FS-LASIK半飞秒</div>
+                            <h3>个性化定制</h3>
+                            <p>制作角膜瓣后进行切削，可结合波前像差引导，适合对视觉质量要求高或散光较高的患者。</p>
+                            <a href="#" class="card-link">了解详情</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('https://picsum.photos/seed/laser3/400/250');"></div>
+                        <div class="card-body">
+                            <div class="card-tag">ICL晶体植入</div>
+                            <h3>可逆晶体植入</h3>
+                            <p>不切削角膜，将柔软晶体植入眼内，适合高度近视、角膜过薄或眼部有其他病变无法激光手术者。</p>
+                            <a href="#" class="card-link">了解详情</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section id="comparison">
+            <div class="container">
+                <div class="section-title">
+                    <h2>三种主流技术对比</h2>
+                    <p>数据仅供参考，具体方案需由医生面诊决定</p>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>对比维度</th>
+                                <th>SMILE全飞秒</th>
+                                <th>FS-LASIK半飞秒</th>
+                                <th>ICL晶体植入</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>手术原理</strong></td>
+                                <td>飞秒激光制作切口并取出透镜</td>
+                                <td>飞秒制作角膜瓣，准分子切削</td>
+                                <td>通过微小切口植入可折叠晶体</td>
+                            </tr>
+                            <tr>
+                                <td><strong>角膜切削</strong></td>
+                                <td>不制作角膜瓣，仅2mm切口</td>
+                                <td>制作角膜瓣，需要切削部分角膜</td>
+                                <td><span class="check-icon">无需</span> 不切削角膜</td>
+                            </tr>
+                            <tr>
+                                <td><strong>适合人群</strong></td>
+                                <td>近视1000度以下，散光500度以下</td>
+                                <td>近视1200度以下，散光600度以下</td>
+                                <td>近视50-1800度，角膜偏薄者</td>
+                            </tr>
+                            <tr>
+                                <td><strong>手术时长</strong></td>
+                                <td>约10-15分钟</td>
+                                <td>约15-20分钟</td>
+                                <td>约30分钟/眼</td>
+                            </tr>
+                            <tr>
+                                <td><strong>干眼风险</strong></td>
+                                <td>较低</td>
+                                <td>中等</td>
+                                <td>极低</td>
+                            </tr>
+                            <tr>
+                                <td><strong>可逆性</strong></td>
+                                <td>不可逆</td>
+                                <td>不可逆</td>
+                                <td><span class="check-icon">可逆</span> 晶体可取出</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题解答</h2>
+                    <p>关于激光视力矫正，您可能关心的核心问题</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item">
+                        <h3>40岁以上还能做激光手术吗？</h3>
+                        <p>40岁以上人群通常面临老花眼问题，单纯近视手术可能无法同时解决老花问题。医生通常会建议进行“单眼视”设计，或者考虑晶体植入术，具体需结合眼部检查结果评估。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>手术后需要休息多久？</h3>
+                        <p>全飞秒手术当天即可正常用眼，但建议避免长时间用眼；半飞秒手术第二天视力通常可见明显提升；ICL手术术后恢复较快。无论哪种手术，术后1周、1个月、3个月、6个月需复查。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>术后视力会反弹吗？</h3>
+                        <p>随着年龄增长，眼球可能会发生生理性变化（如远视化），这可能导致术后视力出现轻微波动，但通常不会回到术前的高度近视状态。保持良好的用眼习惯有助于维持视力稳定。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>哪些情况不适合做激光手术？</h3>
+                        <p>如果患有圆锥角膜、严重干眼症、未控制的糖尿病、自身免疫性疾病（如红斑狼疮）或处于妊娠期/哺乳期，通常不建议进行激光手术。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-op Guide -->
+        <section id="guide">
+            <div class="container">
+                <div class="section-title">
+                    <h2>术前准备与检查流程</h2>
+                    <p>严谨的术前检查是安全手术的前提</p>
+                </div>
+                <div class="checklist-container">
+                    <div class="checklist-content">
+                        <h3>术前检查清单</h3>
+                        <p style="margin-bottom: 20px; color: var(--text-light);">为了确保手术安全，术前需要进行20余项详细检查。请提前做好准备：</p>
+                        <ul class="step-list">
+                            <li>
+                                <span class="step-num">1</span>
+                                <div>
+                                    <strong>裸眼及矫正视力</strong>
+                                    <p style="font-size: 0.9rem; color: #666;">基础视力测试，确定手术目标。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="step-num">2</span>
+                                <div>
+                                    <strong>角膜厚度及形态</strong>
+                                    <p style="font-size: 0.9rem; color: #666;">使用角膜地形图仪，排除圆锥角膜风险。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="step-num">3</span>
+                                <div>
+                                    <strong>眼压测量</strong>
+                                    <p style="font-size: 0.9rem; color: #666;">筛查青光眼等眼压异常情况。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="step-num">4</span>
+                                <div>
+                                    <strong>瞳孔直径测量</strong>
+                                    <p style="font-size: 0.9rem; color: #666;">暗环境下瞳孔大小，防止夜间眩光。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="step-num">5</span>
+                                <div>
+                                    <strong>泪液分泌测试</strong>
+                                    <p style="font-size: 0.9rem; color: #666;">评估干眼程度，决定是否需要术前治疗。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <aside class="checklist-steps">
+                        <div class="sidebar-box">
+                            <h3>术后护理要点</h3>
+                            <ul>
+                                <li><strong>用药规范：</strong>严格遵医嘱滴眼药水，不可随意停药。</li>
+                                <li><strong>眼部防护：</strong>术后1个月内避免异物入眼，避免游泳。</li>
+                                <li><strong>用眼节制：</strong>减少近距离用眼，避免熬夜。</li>
+                                <li><strong>定期复查：</strong>按时回医院复查，监控恢复情况。</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section id="contact" style="background-color: var(--primary-color); color: var(--white); text-align: center;">
+            <div class="container">
+                <h2 style="margin-bottom: 15px;">准备好摘掉眼镜了吗？</h2>
+                <p style="margin-bottom: 30px; opacity: 0.9;">专业眼科医生团队为您解答疑问，制定个性化方案。</p>
+                <button class="cta-btn" style="background-color: var(--white); color: var(--primary-color);">预约免费术前检查</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">专注眼科健康科普与视力矫正服务，致力于为近视人群提供专业、安全、透明的医疗咨询服务。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#intro">手术原理</a></li>
+                        <li><a href="#types">矫正方式</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                        <li><a href="#guide">术前指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关服务</h4>
+                    <ul>
+                        <li><a href="#">全飞秒手术</a></li>
+                        <li><a href="#">半飞秒手术</a></li>
+                        <li><a href="#">ICL晶体植入</a></li>
+                        <li><a href="#">近视防控</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>咨询热线：400-123-4567</li>
+                        <li>工作时间：周一至周日 9:00-18:00</li>
+                        <li>电子邮箱：contact@example.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 激光视力矫正科普中心 版权所有 | 本站内容仅供科普参考，具体诊疗请以线下医生诊断为准。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+              </html>
