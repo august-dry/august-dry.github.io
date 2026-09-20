@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冨川芽生 - 日本新生代偶像演员与写真摄影集档案</title>
+    <meta name="description" content="冨川芽生官方网站与资料库，收录其演艺生涯、代表作品、写真集介绍及最新动态资讯。">
+    <meta name="keywords" content="冨川芽生, 日本偶像, 演员写真, 新生代女优, 日本影视">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --spacing-unit: 16px;
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/tomikawa/1920/1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Profile Section */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--bg-color);
+        }
+
+        .profile-info h3 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-label {
+            font-weight: 600;
+        }
+
+        .profile-desc {
+            margin-top: 30px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        /* Works Grid */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .work-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .work-thumb {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .work-body {
+            padding: 20px;
+        }
+
+        .work-tag {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .work-title {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .work-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* News List */
+        .news-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            background: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .news-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            min-width: 120px;
+        }
+
+        .news-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ecf0f1;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .news-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Tomikawa<span>Moe</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">个人档案</a></li>
+                    <li><a href="#works">影视作品</a></li>
+                    <li><a href="#gallery">写真图集</a></li>
+                    <li><a href="#news">最新资讯</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>冨川芽生</h1>
+                <p>日本新生代演员，以其清新的形象和自然的演技在影视界崭露头角。探索她的演艺生涯与精彩瞬间。</p>
+                <a href="#works" class="btn">浏览作品</a>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <div class="container">
+                <h2 class="section-title">个人档案</h2>
+                <p class="section-subtitle">了解冨川芽生的基本信息与职业生涯</p>
+                
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <img src="https://picsum.photos/seed/tomikawa_portrait/400/400" alt="冨川芽生写真" class="profile-img">
+                        <h3>基本信息</h3>
+                        <ul class="info-list">
+                            <li><span class="info-label">生年月日</span><span>2001年</span></li>
+                            <li><span class="info-label">出身地</span><span>日本东京都</span></li>
+                            <li><span class="info-label">身长</span><span>156cm</span></li>
+                            <li><span class="info-label">血液型</span><span>A型</span></li>
+                            <li><span class="info-label">事务所</span><span>Stardust Promotion</span></li>
+                        </ul>
+                    </div>
+                    <div class="profile-desc">
+                        <h3>关于冨川芽生</h3>
+                        <p>冨川芽生是日本知名的影视演员及模特，隶属于Stardust Promotion经纪公司。她以清新自然的少女形象和极具亲和力的表演风格受到观众的喜爱。自出道以来，她参演了多部电视剧及电影，在角色塑造上展现出超越年龄的成熟度与灵气。除了演艺事业，她也积极活跃于时尚界，多次参与杂志拍摄，是日本年轻一代中备受瞩目的偶像演员之一。</p>
+                        <br>
+                        <h3>演艺经历</h3>
+                        <p>冨川芽生在青少年时期便开始接触演艺活动，凭借出众的外形和努力的态度，逐步在竞争激烈的日本娱乐圈中站稳脚跟。她的作品涵盖了青春校园剧、家庭伦理剧以及悬疑推理电影等多种类型，展现了多变的演技实力。随着知名度的提升，她开始受邀担任各大时尚活动的嘉宾，影响力不断扩大。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="section" style="background-color: #fff;">
+            <div class="container">
+                <h2 class="section-title">代表作品</h2>
+                <p class="section-subtitle">精选影视与摄影集作品展示</p>
+                
+                <div class="works-grid">
+                    <!-- Work 1 -->
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/movie1/600/400" alt="青春小说电影海报" class="work-thumb">
+                        <div class="work-body">
+                            <span class="work-tag">电影</span>
+                            <h3 class="work-title">青春小说</h3>
+                            <p class="work-meta">2023年上映 · 饰演女主角</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 2 -->
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/drama2/600/400" alt="都市爱情剧剧照" class="work-thumb">
+                        <div class="work-body">
+                            <span class="work-tag">电视剧</span>
+                            <h3 class="work-title">都市恋曲</h3>
+                            <p class="work-meta">2022年 · 连续剧</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 3 -->
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/photo3/600/400" alt="时尚写真集封面" class="work-thumb">
+                        <div class="work-body">
+                            <span class="work-tag">写真集</span>
+                            <h3 class="work-title">夏日印象</h3>
+                            <p class="work-meta">2021年发售 · 全彩写真</p>
+                        </div>
+                    </article>
+
+                    <!-- Work 4 -->
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/ad4/600/400" alt="时尚广告海报" class="work-thumb">
+                        <div class="work-body">
+                            <span class="work-tag">广告</span>
+                            <h3 class="work-title">美妆品牌代言人</h3>
+                            <p class="work-meta">2023年 · 电视/平面广告</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">精选图集</h2>
+                <p class="section-subtitle">捕捉日常瞬间与舞台魅力</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g1/500/500" alt="图集1">
+                        <div class="gallery-overlay"><span>活动现场</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g2/500/500" alt="图集2">
+                        <div class="gallery-overlay"><span>杂志拍摄</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g3/500/500" alt="图集3">
+                        <div class="gallery-overlay"><span>路透照</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g4/500/500" alt="图集4">
+                        <div class="gallery-overlay"><span>粉丝见面会</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g5/500/500" alt="图集5">
+                        <div class="gallery-overlay"><span>街拍</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g6/500/500" alt="图集6">
+                        <div class="gallery-overlay"><span>写真特辑</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g7/500/500" alt="图集7">
+                        <div class="gallery-overlay"><span>红毯造型</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/g8/500/500" alt="图集8">
+                        <div class="gallery-overlay"><span>幕后花絮</span></div>
+                    </div>
+                </div>
+                
+                <div class="view-all">
+                    <a href="#" class="btn">查看更多图集</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section" style="background-color: #fff;">
+            <div class="container">
+                <h2 class="section-title">最新资讯</h2>
+                <p class="section-subtitle">关注她的最新动态与公告</p>
+                
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="news-date">2023-10-15</span>
+                        <div class="news-content">
+                            <h4>新电影《青春小说》即将上映，冨川芽生主演</h4>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2023-08-20</span>
+                        <div class="news-content">
+                            <h4>出席时尚品牌秋季新品发布会</h4>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2023-05-10</span>
+                        <div class="news-content">
+                            <h4>个人首本写真集《夏日印象》发售纪念活动</h4>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2023-02-28</span>
+                        <div class="news-content">
+                            <h4>电视剧《都市恋曲》收视率创收视新高</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p style="color: #bdc3c7; font-size: 0.9rem;">
+                        本站旨在为粉丝提供关于日本演员冨川芽生的全面资料与资讯整理。内容来源于网络公开信息整理，仅供粉丝交流参考。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#profile">个人档案</a></li>
+                        <li><a href="#works">影视作品</a></li>
+                        <li><a href="#gallery">写真图集</a></li>
+                        <li><a href="#news">最新资讯</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>免责声明</h4>
+                    <ul>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">联系站长</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 冨川芽生粉丝资料站. All Rights Reserved. Designed for fans.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
