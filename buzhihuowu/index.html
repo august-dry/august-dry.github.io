@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="不知火舞被俘专题页面，收录格斗游戏经典场景解析、同人创作与角色设定资料。深入了解不知火舞的战斗风格、格斗技连招以及她在不同作品中的形象演变。">
+    <meta name="keywords" content="不知火舞被俘,不知火舞,格斗游戏,拳皇,格斗技,角色设定">
+    <title>不知火舞被俘-格斗游戏经典场景解析与同人创作专区</title>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #212121;
+            --accent-color: #ff9800;
+            --bg-color: #f5f5f5;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #757575;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #4a1c1c 100%);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #ddd;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* 主要内容区 */
+        main {
+            padding-bottom: 60px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+
+        /* 角色档案卡片 */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            background-color: #eee;
+        }
+
+        .profile-info h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 100px;
+            color: var(--text-light);
+        }
+
+        /* 经典场景分析 */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* 技能解析 */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-item {
+            flex: 1 1 300px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-top: 3px solid var(--primary-color);
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .skill-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 10px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--secondary-color);
+            color: #999;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">格斗百科</a>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">角色图鉴</a></li>
+                <li><a href="#">同人创作</a></li>
+                <li><a href="#">游戏攻略</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="container">
+        <h1>不知火舞被俘</h1>
+        <p>深度解析格斗女王在特殊情境下的战术博弈与角色魅力</p>
+    </div>
+</div>
+
+<main class="container">
+
+    <!-- 角色基础档案 -->
+    <section>
+        <h2 class="section-title">角色档案</h2>
+        <div class="profile-grid">
+            <img src="https://picsum.photos/seed/mai_profile/400/500" alt="不知火舞角色形象" class="profile-img">
+            <div class="profile-info">
+                <h2>不知火舞</h2>
+                <ul class="info-list">
+                    <li><span class="info-label">所属组织：</span>不知火流</li>
+                    <li><span class="info-label">代表作品：</span>《拳皇》系列、《饿狼传说》</li>
+                    <li><span class="info-label">战斗风格：</span>不知火流忍术 + 格斗技</li>
+                    <li><span class="info-label">标志性技能：</span>超必杀忍蜂、飞鼠</li>
+                </ul>
+                <p style="margin-top: 15px; color: #555;">
+                    不知火舞是SNK旗下经典格斗游戏《饿狼传说》及《拳皇》系列中的女主角之一。她以其鲜艳的服饰、大胆的性格以及高机动性的格斗技巧闻名。虽然搜索“不知火舞被俘”往往指向特定同人创作，但在正史剧情中，她更多是作为团队的突击核心和情报收集者，凭借其敏捷的身手化解危机。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经典场景与同人解析 -->
+    <section>
+        <h2 class="section-title">经典场景与同人创作解析</h2>
+        <p style="margin-bottom: 20px; color: #666;">
+            在玩家社区和同人创作中，针对不知火舞被俘这一主题的讨论，主要集中在角色在失去防御优势下的战术分析以及视觉表现的艺术化处理。以下从游戏机制和视觉设计两个维度进行解读。
+        </p>
+        <div class="analysis-grid">
+            <article class="card">
+                <img src="https://picsum.photos/seed/fight1/400/250" alt="不知火舞战斗场景" class="card-img">
+                <div class="card-content">
+                    <h3>战术博弈视角</h3>
+                    <p>在格斗游戏机制中，当角色进入被擒状态（如被对手抓住或陷入眩晕），通常意味着防御力的完全丧失。对于不知火舞这类高机动性角色，被俘往往意味着玩家操作失误或对手使用了特定的投技（如八神庵的葵花）。</p>
+                    <span class="tag">游戏机制</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://picsum.photos/seed/fight2/400/250" alt="角色受困状态" class="card-img">
+                <div class="card-content">
+                    <h3>视觉表现与艺术</h3>
+                    <p>同人创作者常利用不知火舞标志性的红色服饰与背景的对比，通过光影和构图强调角色的柔韧性与力量感的反差。这种题材通常侧重于角色性格的展现，而非单纯的暴力描写。</p>
+                    <span class="tag">同人艺术</span>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://picsum.photos/seed/fight3/400/250" alt="战斗连招解析" class="card-img">
+                <div class="card-content">
+                    <h3>连招与反击</h3>
+                    <p>了解“被俘”后的反击机制是提升游戏水平的关键。不知火舞拥有独特的起身技，在被对手抓住的瞬间通过特定按键组合，可以打出反击伤害，化被动为主动。</p>
+                    <span class="tag">操作技巧</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 核心技能解析 -->
+    <section>
+        <h2 class="section-title">核心技能解析</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">超必杀忍蜂</span>
+                    <span class="tag">必杀技</span>
+                </div>
+                <p class="skill-desc">不知火舞的招牌技能。在空中或地面快速突进并发出冲击波，具有极强的突进和破防能力。这是她摆脱被俘状态、反打对手的最常用手段。</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">飞鼠</span>
+                    <span class="tag">特殊技</span>
+                </div>
+                <p class="skill-desc">利用忍具飞出，在空中改变方向。在近身缠斗中，此技能常用于拉开距离或预判对手的抓取动作。</p>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">必杀忍蜂</span>
+                    <span class="tag">投技反制</span>
+                </div>
+                <p class="skill-desc">当对手将不知火舞抓住时，如果玩家反应迅速，可以输入特定的指令解除抓取并造成伤害。这是防御被俘状态的核心技巧。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section>
+        <h2 class="section-title">常见问题 (FAQ)</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">不知火舞在游戏中如何防止被对手抓住？</div>
+            <div class="faq-answer">
+                防止被俘的关键在于保持距离和预判。利用不知火舞的远程技能（如飞鼠）压制对手，或者保持移动以减少被投技命中的概率。此外，熟悉所有对手的投技指令也是避免被俘的有效方法。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">“不知火舞被俘”通常出现在哪些类型的同人作品中？</div>
+            <div class="faq-answer">
+                这类内容主要集中在二次元同人绘画和小说中。创作者通常通过这一设定来探讨角色在极端环境下的心理变化，或者为了满足角色之间的剧情互动需求。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">不知火舞的正史剧情中是否有被俘的情节？</div>
+            <div class="faq-answer">
+                在官方正史剧情中，不知火舞作为主角团的一员，鲜少处于真正的被俘状态。她更多是以领导者的身份活跃，凭借智慧和武力解决危机。所谓的“被俘”多见于玩家间的对战模拟或衍生剧情。
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">联系合作</a>
+        </div>
+        <p>&copy; 2023 格斗游戏百科. All Rights Reserved. 本站内容仅供学习交流，不代表本站立场。</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+
+<script>
+    // 简单的FAQ折叠交互逻辑
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // 关闭其他已打开的项
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // 切换当前项的状态
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
