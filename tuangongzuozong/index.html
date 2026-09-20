@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="团工作总结模板与撰写指南，提供年度、季度、专项团组织工作总结的写作思路、结构框架及优秀范文，帮助共青团员及基层团干部高效完成工作汇报。">
+    <meta name="keywords" content="团工作总结, 团组织工作总结, 团干部总结, 共青团年度总结, 团支部工作汇报">
+    <title>团工作总结-基层团组织工作汇报模板与撰写指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e60012; /* 共青团红 */
+            --primary-hover: #b3000f;
+            --secondary-color: #0056b3; /* 辅助蓝 */
+            --bg-color: #f4f6f9;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 16px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-outline {
+            padding: 8px 20px;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #fff0f0 0%, #ffffff 100%);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 通用区块样式 */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        /* 核心模板卡片 */
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card.type-year { border-top-color: var(--primary-color); }
+        .card.type-quarter { border-top-color: var(--secondary-color); }
+        .card.type-special { border-top-color: #28a745; }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--text-secondary);
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+
+        .card-features li {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card-features li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .btn-card {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline-card {
+            border: 1px solid #ddd;
+            color: var(--text-main);
+        }
+
+        .btn-outline-card:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* 撰写指南 */
+        .guide-section {
+            background-color: var(--white);
+        }
+
+        .guide-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .guide-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .guide-text h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .guide-text p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        .guide-list {
+            margin-top: 30px;
+        }
+
+        .guide-list h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .guide-list ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .guide-list li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .guide-list li::marker {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .guide-image {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f0f2f5;
+            border-radius: var(--border-radius);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 16px;
+            border: 1px dashed #ccc;
+        }
+
+        /* 常见问题 */
+        .faq-section {
+            background-color: #fafafa;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-item h4::before {
+            content: 'Q';
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .faq-item p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            padding-left: 34px;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h5 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-header h2 {
+                font-size: 26px;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>团建助手</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">模板中心</a>
+                <a href="#">写作指南</a>
+                <a href="#">素材库</a>
+                <a href="#">关于我们</a>
+            </nav>
+            <a href="#" class="btn-outline">登录/注册</a>
+        </div>
+    </header>
+
+    <!-- 首屏区域 -->
+    <section class="hero">
+        <div class="container">
+            <h1>团工作总结<span>撰写助手</span></h1>
+            <p>为您提供专业的团组织工作总结模板、写作思路及结构框架，助力基层团干部高效完成年度、季度及专项工作汇报。</p>
+            <div class="search-box">
+                <input type="text" placeholder="输入关键词，如：2024年度团支部工作总结...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心模板推荐 -->
+    <section class="container">
+        <div class="section-header">
+            <h2>热门工作总结模板</h2>
+            <p>根据不同场景选择合适的总结框架，快速上手</p>
+        </div>
+        <div class="template-grid">
+            <!-- 模板1：年度总结 -->
+            <article class="card type-year">
+                <div class="card-icon">📅</div>
+                <h3>年度团组织工作总结</h3>
+                <p>适用于团支部、团委一年的全面工作回顾，包含思想引领、组织建设、志愿服务及特色活动等板块。</p>
+                <ul class="card-features">
+                    <li>涵盖思想引领与理论学习</li>
+                    <li>组织建设与团员发展</li>
+                    <li>志愿服务与社会实践</li>
+                    <li>存在的问题与改进措施</li>
+                </ul>
+                <a href="#" class="btn-card btn-primary">查看详情</a>
+                <a href="#" class="btn-card btn-outline-card">下载模板</a>
+            </article>
+
+            <!-- 模板2：季度汇报 -->
+            <article class="card type-quarter">
+                <div class="card-icon">📊</div>
+                <h3>季度工作汇报</h3>
+                <p>适用于阶段性工作总结，重点突出当季度的重点工作进展、数据统计及阶段性成果。</p>
+                <ul class="card-features">
+                    <li>季度核心指标完成情况</li>
+                    <li>重点活动开展记录</li>
+                    <li>阶段性亮点工作展示</li>
+                    <li>下季度工作计划</li>
+                </ul>
+                <a href="#" class="btn-card btn-primary">查看详情</a>
+                <a href="#" class="btn-card btn-outline-card">下载模板</a>
+            </article>
+
+            <!-- 模板3：专项活动总结 -->
+            <article class="card type-special">
+                <div class="card-icon">🚩</div>
+                <h3>专项活动总结</h3>
+                <p>针对“三会一课”、主题团日、青年大学习等特定活动的深度复盘与经验提炼。</p>
+                <ul class="card-features">
+                    <li>活动背景与目标</li>
+                    <li>活动实施过程与亮点</li>
+                    <li>参与人数与覆盖面</li>
+                    <li>活动成效与经验启示</li>
+                </ul>
+                <a href="#" class="btn-card btn-primary">查看详情</a>
+                <a href="#" class="btn-card btn-outline-card">下载模板</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- 撰写指南 -->
+    <section class="guide-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>标准撰写指南</h2>
+                <p>掌握结构化写作方法，让工作总结条理清晰、重点突出</p>
+            </div>
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3>如何写好一份高质量的团工作总结？</h3>
+                    <p>团工作总结是展示基层团组织活力、凝聚力和战斗力的重要载体。一份优秀的总结不仅要罗列工作，更要体现思想深度和改进决心。以下是为您整理的通用写作结构：</p>
+                    
+                    <div class="guide-list">
+                        <h4>一、 标题规范</h4>
+                        <p>标题应明确总结的时间周期、单位名称及文种。例如：“XX公司团委2024年度工作总结”或“XX团支部2024年第一季度工作总结”。</p>
+                        
+                        <h4>二、 基本结构</h4>
+                        <ol>
+                            <li><strong>引言/前言：</strong>简述本阶段工作的背景、指导思想及总体概况。</li>
+                            <li><strong>主要工作及成效：</strong>这是核心部分。建议分类阐述，如：思想建设、组织建设、作风建设、活动开展等。使用数据说话，如“开展活动X场，参与团员Y人”。</li>
+                            <li><strong>存在的问题与不足：</strong>实事求是地分析工作中存在的短板，避免空泛。</li>
+                            <li><strong>下一步工作计划：</strong>针对问题提出具体的改进措施和下一阶段的工作目标。</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="guide-image">
+                    <div style="text-align: center;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 10px;">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        <p>结构化思维导图示意图</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+                <p>关于团工作总结的常见疑问与解答</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>团工作总结需要包含哪些核心数据？</h4>
+                    <p>建议包含团员总数、新发展团员人数、主题团日活动开展次数、青年大学习参与率、志愿服务时长等关键指标。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>如何体现团工作的创新性？</h4>
+                    <p>在“主要工作”板块中，单独设立“特色亮点”栏目，重点描述具有本单位特色的创新做法和取得的突破性成果。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>年度总结和季度总结有什么区别？</h4>
+                    <p>年度总结侧重全面性和年度性，需涵盖全年所有工作；季度总结侧重阶段性进展和进度控制，重点在于当季度的核心任务完成情况。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>附件材料需要包含什么？</h4>
+                    <p>通常需要包含活动照片、新闻稿链接、活动签到表、团员名册等证明材料。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>关于我们</h5>
+                    <p style="font-size: 14px; line-height: 1.8;">团建助手致力于为全国各级团组织、基层团支部提供便捷的团务工作支持与资源服务。</p>
+                </div>
+                <div class="footer-col">
+                    <h5>常用工具</h5>
+                    <ul>
+                        <li><a href="#">团费计算器</a></li>
+                        <li><a href="#">团员档案管理</a></li>
+                        <li><a href="#">活动策划案</a></li>
+                        <li><a href="#">入团申请书</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>资源下载</h5>
+                    <ul>
+                        <li><a href="#">团徽团旗规范</a></li>
+                        <li><a href="#">支部工作手册</a></li>
+                        <li><a href="#">活动策划书模板</a></li>
+                        <li><a href="#">考核评分表</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>联系我们</h5>
+                    <ul>
+                        <li>客服热线：400-123-4567</li>
+                        <li>电子邮箱：support@tuanhelper.com</li>
+                        <li>工作时间：周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 团建助手 版权所有 | 仅供学习交流使用</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
