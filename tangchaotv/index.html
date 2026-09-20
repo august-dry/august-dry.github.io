@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="唐朝TV - 汇聚中国历史正剧、古装传奇与经典影视资源的在线观看平台。提供高清流畅的影视剧集，带您重温大唐盛世风采。">
+    <meta name="keywords" content="唐朝TV,古装剧,历史剧,电视剧,影视资源,大唐风云">
+    <title>唐朝TV-高清历史正剧与古装影视在线观看</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B0000; /* 深红，象征唐朝皇家与历史厚重感 */
+            --secondary-color: #C0392B; /* 亮红，用于强调 */
+            --accent-color: #D4AF37; /* 金色，象征大唐盛世 */
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --spacing-unit: 8px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary-color);
+        }
+
+        .search-box {
+            display: flex;
+        }
+
+        .search-box input {
+            background: #333;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .search-box button {
+            background: var(--primary-color);
+            border: none;
+            color: #fff;
+            padding: 0 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        /* Hero Section - 首屏推荐 */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/tangdynasty/1600/900') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding-top: 20px;
+        }
+
+        .hero-tag {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 4px 10px;
+            font-size: 12px;
+            border-radius: 2px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* 分类导航条 */
+        .category-bar {
+            background-color: var(--bg-card);
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category-list a {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .category-list a:hover, .category-list a.active {
+            color: var(--accent-color);
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        /* 通用 Section 样式 */
+        section {
+            padding: 50px 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .section-header a {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .section-header a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 卡片网格 */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .card-cover {
+            position: relative;
+            padding-top: 140%; /* 5:7 Poster Ratio */
+            overflow: hidden;
+        }
+
+        .card-cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .play-icon {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .card-info {
+            padding: 12px;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .badge {
+            font-size: 10px;
+            padding: 1px 4px;
+            border-radius: 2px;
+            background-color: #333;
+            color: #aaa;
+        }
+
+        .badge.hd {
+            background-color: var(--accent-color);
+            color: #000;
+        }
+
+        /* 列表布局 */
+        .list-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        .list-card {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            background-color: var(--bg-card);
+            padding: 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .list-card:hover {
+            background-color: #252525;
+        }
+
+        .list-thumb {
+            width: 120px;
+            height: 160px;
+            flex-shrink: 0;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .list-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .list-content h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .list-content p {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .list-tags {
+            display: flex;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 12px;
+            color: var(--accent-color);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 1px 6px;
+            border-radius: 10px;
+        }
+
+        /* 留言/社区 */
+        .forum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .forum-post {
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .post-info h4 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .post-info span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .post-content {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .post-footer {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+
+        .action {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .action:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #000;
+            padding: 50px 0 20px;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                margin: 10px 0;
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .search-box {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .search-box input {
+                flex-grow: 1;
+            }
+
+            .hero {
+                height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .list-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-color)"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>唐朝TV</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">古装正剧</a></li>
+                    <li><a href="#">历史传奇</a></li>
+                    <li><a href="#">经典老片</a></li>
+                    <li><a href="#">排行榜</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索剧集、演员...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 分类导航 -->
+    <div class="category-bar">
+        <div class="container category-list">
+            <a href="#" class="active">全部</a>
+            <a href="#">唐太宗</a>
+            <a href="#">武则天</a>
+            <a href="#">唐玄宗</a>
+            <a href="#">杨贵妃</a>
+            <a href="#">大唐盛世</a>
+            <a href="#">安史之乱</a>
+            <a href="#">宫廷权谋</a>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-tag">本周重磅推荐</span>
+            <h1>大明宫词</h1>
+            <p>一部气势恢宏的史诗巨制，以唐高宗与武则天的爱情故事为主线，展现大唐盛世的繁华与宫廷的波澜诡谲。重温经典，感受历史的厚重与情感的纠葛。</p>
+            <a href="#" class="btn">立即观看</a>
+            <a href="#" class="btn" style="background:transparent; border:1px solid #fff; margin-left:10px;">查看详情</a>
+        </div>
+    </section>
+
+    <!-- 热门剧集 -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>热门古装正剧</h2>
+                <a href="#">查看更多 ></a>
+            </div>
+            <div class="grid-layout">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang1/300/420" alt="大唐双龙传">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">大唐双龙传</div>
+                        <div class="card-meta">
+                            <span>2019版</span>
+                            <span class="badge hd">HD</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang2/300/420" alt="贞观长歌">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">贞观长歌</div>
+                        <div class="card-meta">
+                            <span>2007版</span>
+                            <span class="badge hd">HD</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang3/300/420" alt="美人心计">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">美人心计</div>
+                        <div class="card-meta">
+                            <span>2010版</span>
+                            <span class="badge hd">HD</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang4/300/420" alt="长安十二时辰">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">长安十二时辰</div>
+                        <div class="card-meta">
+                            <span>2021版</span>
+                            <span class="badge hd">4K</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang5/300/420" alt="武则天秘史">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">武则天秘史</div>
+                        <div class="card-meta">
+                            <span>2011版</span>
+                            <span class="badge hd">HD</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/tang6/300/420" alt="大明宫词">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">大明宫词</div>
+                        <div class="card-meta">
+                            <span>2000版</span>
+                            <span class="badge hd">HD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 排行榜与资讯 -->
+    <section style="background-color: #181818;">
+        <div class="container">
+            <div class="list-layout">
+                <!-- 左侧：播放记录/排行 -->
+                <aside>
+                    <div class="section-header">
+                        <h2>热门榜单</h2>
+                    </div>
+                    <div class="card" style="margin-bottom: 15px; display:flex; gap:10px; align-items:center;">
+                        <div style="font-size:24px; font-weight:bold; color:var(--secondary-color);">01</div>
+                        <div>
+                            <div class="card-title" style="font-size:14px;">长安十二时辰</div>
+                            <div class="card-meta">9.8分</div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 15px; display:flex; gap:10px; align-items:center;">
+                        <div style="font-size:24px; font-weight:bold; color:var(--secondary-color);">02</div>
+                        <div>
+                            <div class="card-title" style="font-size:14px;">大明宫词</div>
+                            <div class="card-meta">9.5分</div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 15px; display:flex; gap:10px; align-items:center;">
+                        <div style="font-size:24px; font-weight:bold; color:var(--secondary-color);">03</div>
+                        <div>
+                            <div class="card-title" style="font-size:14px;">贞观长歌</div>
+                            <div class="card-meta">9.3分</div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 15px; display:flex; gap:10px; align-items:center;">
+                        <div style="font-size:24px; font-weight:bold; color:#666;">04</div>
+                        <div>
+                            <div class="card-title" style="font-size:14px;">武媚娘传奇</div>
+                            <div class="card-meta">9.1分</div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-bottom: 15px; display:flex; gap:10px; align-items:center;">
+                        <div style="font-size:24px; font-weight:bold; color:#666;">05</div>
+                        <div>
+                            <div class="card-title" style="font-size:14px;">大唐荣耀</div>
+                            <div class="card-meta">8.9分</div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- 右侧：最新资讯 -->
+                <main>
+                    <div class="section-header">
+                        <h2>历史与影视资讯</h2>
+                        <a href="#">更多资讯 ></a>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-thumb">
+                            <img src="https://picsum.photos/seed/history1/200/280" alt="唐朝服饰">
+                        </div>
+                        <div class="list-content">
+                            <h3>大唐服饰复原：从马面裙到圆领袍的演变</h3>
+                            <p>唐朝作为中国历史上最开放、最繁荣的朝代之一，其服饰文化也达到了顶峰。本文带你深入了解唐代女装的形制与特点，感受盛唐气象。</p>
+                            <div class="list-tags">
+                                <span class="tag">服饰文化</span>
+                                <span class="tag">历史</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-thumb">
+                            <img src="https://picsum.photos/seed/history2/200/280" alt="长安城">
+                        </div>
+                        <div class="list-content">
+                            <h3>长安城布局解析：大明宫为何是权力的中心？</h3>
+                            <p>大明宫不仅是唐朝的政治中心，更是世界建筑的瑰宝。通过最新的考古发掘与复原研究，重新审视这座千年古都的宏伟蓝图。</p>
+                            <div class="list-tags">
+                                <span class="tag">城市规划</span>
+                                <span class="tag">考古</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-thumb">
+                            <img src="https://picsum.photos/seed/history3/200/280" alt="影视剧评">
+                        </div>
+                        <div class="list-content">
+                            <h3>如何评价《长安十二时辰》中的服化道还原度？</h3>
+                            <p>该剧在服化道上下了极大功夫，几乎1:1还原了唐代长安城的街景与礼仪。导演曹盾在接受专访时透露了幕后制作的艰辛与坚持。</p>
+                            <div class="list-tags">
+                                <span class="tag">影评</span>
+                                <span class="tag">影视</span>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户社区/讨论区 -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>唐风雅集</h2>
+                <a href="#">加入讨论 ></a>
+            </div>
+            <div class="forum-grid">
+                <div class="forum-post">
+                    <div class="post-header">
+                        <div class="avatar">书</div>
+                        <div class="post-info">
+                            <h4>书生墨客</h4>
+                            <span>2小时前</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        大家觉得《大明宫词》里太平公主的角色塑造如何？感觉比武则天更让人心疼。
+                    </div>
+                    <div class="post-footer">
+                        <span class="action">👍 128</span>
+                        <span class="action">💬 45</span>
+                        <span class="action">⭐ 收藏</span>
+                    </div>
+                </div>
+                <div class="forum-post">
+                    <div class="post-header">
+                        <div class="avatar">武</div>
+                        <div class="post-info">
+                            <h4>武媚娘迷</h4>
+                            <span>5小时前</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        谁有《武媚娘传奇》高清修复版的资源推荐？老版本画质太差了，想重温一下。
+                    </div>
+                    <div class="post-footer">
+                        <span class="action">👍 89</span>
+                        <span class="action">💬 23</span>
+                        <span class="action">⭐ 收藏</span>
+                    </div>
+                </div>
+                <div class="forum-post">
+                    <div class="post-header">
+                        <div class="avatar">李</div>
+                        <div class="post-info">
+                            <h4>李太白</h4>
+                            <span>昨天</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        欢迎来到唐朝TV社区！这里是喜爱古装历史剧的小伙伴聚集地，欢迎交流观影心得。
+                    </div>
+                    <div class="post-footer">
+                        <span class="action">👍 56</span>
+                        <span class="action">💬 12</span>
+                        <span class="action">⭐ 收藏</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>关于唐朝TV</h3>
+                    <p style="color:#666; font-size:14px; line-height:1.8;">
+                        唐朝TV 致力于为用户提供最优质的中国古装历史影视资源。我们专注于整理、修复和分享经典与热门的历史正剧，让您足不出户即可领略大唐盛世的恢弘气度。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="#">网站首页</a></li>
+                        <li><a href="#">古装正剧</a></li>
+                        <li><a href="#">历史传奇</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">用户登录</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>热门分类</h3>
+                    <ul>
+                        <li><a href="#">唐太宗李世民</a></li>
+                        <li><a href="#">武则天</a></li>
+                        <li><a href="#">杨贵妃</a></li>
+                        <li><a href="#">唐玄宗李隆基</a></li>
+                        <li><a href="#">安史之乱</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li><a href="#">意见反馈</a></li>
+                        <li><a href="#">侵权投诉</a></li>
+                        <li><a href="#">合作加盟</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 唐朝TV. All Rights Reserved. 本站内容仅供学习交流使用，资源版权归原作者所有。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                      </html>
